@@ -1,11 +1,13 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+<!DOCTYPE HTML>
+ <head>
+    <link rel="stylesheet" href="styles.css">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+ </head>
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<body>
+    
+<div class="container">
+ <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
 </script>
@@ -46,4 +48,6 @@ Product Interest:<select  id="00N5g00000HgFJR" name="00N5g00000HgFJR" title="Pro
 <div class="g-recaptcha" data-sitekey="6LejgXEbAAAAAMon7XoD5tk5dOXuRduvTLP2S92V"></div><br>
 <input type="submit" name="submit">
 
-</form>
+</form>   
+</div>
+</body>

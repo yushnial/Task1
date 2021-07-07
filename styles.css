@@ -47,7 +47,7 @@ background: #d2d9dd;
 }
 .container select{
 -webkit-appearance: menulist-button;
-height:70px;
+height:120px;
 }
 .container input[type="submit"]
 {
